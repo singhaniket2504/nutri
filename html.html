@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriTrack - Track Your Nutrition</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <h1>NutriTrack</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Log Meal</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="intro">
+            <h2>Track Your Nutrition Effortlessly</h2>
+            <p>NutriTrack helps you stay on top of your calories, macros, and fitness goals. Let's get started!</p>
+        </section>
+
+        <section class="food-search">
+            <div class="search-container">
+                <input type="text" id="food-search" placeholder="Search for food..." oninput="searchFood()">
+<div id="search-results"></div>
+            </div>
+<div id="search-history" class="history-container">
+    <h3>Previous Searches</h3>
+    <!-- Search history results will be added here -->
+</div>
+<button onclick="clearSearchHistory()">Clear Search History</button>
+
+            
+        <section class="meal-log">
+            <h3>Log Your Meal</h3>
+            <form id="meal-form" class="meal-form">
+                <input type="text" id="meal-name" placeholder="Meal Name" required>
+                <input type="number" id="meal-protein" placeholder="Protein (g)" required>
+                <input type="number" id="meal-carbs" placeholder="Carbs (g)" required>
+                <input type="number" id="meal-fat" placeholder="Fat (g)" required>
+                <button type="submit">Add Meal</button>
+            </form>
+
+            <div id="meal-breakdown" class="meal-breakdown"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NutriTrack. All rights reserved.</p>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>

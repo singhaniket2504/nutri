@@ -1,0 +1,220 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #6c63ff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: #fff5a1;
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    color: #6c63ff;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Food Search Section */
+.food-search {
+    margin-bottom: 40px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
+.search-container input {
+    width: 60%;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+    box-shadow: 0 0 10px rgba(96, 81, 255, 0.5);
+    border: 2px solid #6c63ff;
+}
+
+/* Search Results */
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.food-result {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-result:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.food-result h4 {
+    font-size: 1.2rem;
+    color: #6c63ff;
+    margin-bottom: 10px;
+}
+
+.food-result p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Meal Log Form */
+.meal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.meal-form input {
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: none;
+    background-color: #f1f1f1;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+}
+
+.meal-form input:focus {
+    box-shadow: 0 0 10px rgba(96, 81, 255, 0.5);
+    background-color: #ffffff;
+}
+
+.meal-form button {
+    padding: 15px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.meal-form button:hover {
+    background-color: #574bca;
+}
+
+/* Meal Breakdown */
+.meal-breakdown {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.meal-breakdown h4 {
+    font-size: 1.5rem;
+    color: #6c63ff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.meal-breakdown p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2d3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
